@@ -40,4 +40,7 @@ public final class Columns {
     public static final String PRINCIPAL_ID = "Principal ID";
     public static final String PRINCIPAL_NAME = "Principal Name";
     public static final String ROLE = "Role";
+
+    public static final String REFERENCE_NAME = "Ref Name";
+    public static final String SNAPSHOT_ID = "Snapshot ID";
 }

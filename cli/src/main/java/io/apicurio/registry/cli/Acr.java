@@ -1,5 +1,8 @@
 package io.apicurio.registry.cli;
 
+import io.apicurio.registry.cli.admin.ExportCommand;
+import io.apicurio.registry.cli.admin.ImportCommand;
+import io.apicurio.registry.cli.admin.SnapshotCommand;
 import io.apicurio.registry.cli.artifact.ArtifactCommand;
 import io.apicurio.registry.cli.auth.LoginCommand;
 import io.apicurio.registry.cli.auth.LogoutCommand;
@@ -7,6 +10,7 @@ import io.apicurio.registry.cli.config.ConfigPropertyCommand;
 import io.apicurio.registry.cli.context.ContextCommand;
 import io.apicurio.registry.cli.globalrule.GlobalRuleCommand;
 import io.apicurio.registry.cli.group.GroupCommand;
+import io.apicurio.registry.cli.reference.ReferenceCommand;
 import io.apicurio.registry.cli.rolemapping.RoleMappingCommand;
 import io.apicurio.registry.cli.search.SearchCommand;
 import io.quarkus.picocli.runtime.annotations.TopCommand;
@@ -31,13 +35,17 @@ import static picocli.CommandLine.ScopeType.INHERIT;
                 ArtifactCommand.class,
                 ConfigPropertyCommand.class,
                 ContextCommand.class,
+                ExportCommand.class,
                 GlobalRuleCommand.class,
                 GroupCommand.class,
+                ImportCommand.class,
                 InstallCommand.class,
                 LoginCommand.class,
                 LogoutCommand.class,
+                ReferenceCommand.class,
                 RoleMappingCommand.class,
                 SearchCommand.class,
+                SnapshotCommand.class,
                 UpdateCommand.class,
                 VersionCommand.class
         },
